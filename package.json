@@ -73,7 +73,7 @@
     "jasmine-core": "^3.1.0",
     "mock-fs": "^4.4.1",
     "typescript": "^2.5.3",
-    "semantic-release": "^15.5.0",
+    "semantic-release": "^15.5.5",
     "@labshare/semantic-release-config": "^1.0.0"
   },
   "snyk": true,
