@@ -41,7 +41,7 @@
     "@types/q": "^1.0.5",
     "@types/semver": "^5.4.0",
     "@types/shelljs": "^0.8.0",
-    "@types/winston": "^2.3.6",
+    "@types/winston": "2.3.9",
     "@types/yargs": "^11.0.0",
     "flatiron": "^0.4.2",
     "flatiron-cli-config": "^0.1.5",
