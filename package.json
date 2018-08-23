@@ -57,7 +57,7 @@
     "resolve-pkg": "^1.0.0",
     "semver": "^5.3.0",
     "shelljs": "^0.8.2",
-    "snyk": "^1.88.0",
+    "snyk": "^1.92.7",
     "tiny-json-http": "^7.0.0",
     "underscore.string": "^3.3.4",
     "untildify": "^3.0.3",
