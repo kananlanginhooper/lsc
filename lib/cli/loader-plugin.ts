@@ -40,19 +40,23 @@ exports.attach = function(options) {
 };
 
 exports.init = async function init(done) {
-  exports.loader = new CliLoader(this, exports.options);
+  if (this !== undefined) {
+    exports.loader = new CliLoader(this, exports.options);
 
-  try {
-    await exports.loader.load();
+    try {
+      await exports.loader.load();
 
-    this.commands['help'] = function() {
-      exports.loader.displayHelp();
-    };
+      this.commands['help'] = function() {
+        exports.loader.displayHelp();
+      };
 
+      done();
+    } catch (error) {
+      // TODO: workaround for async/await incompatibility with callbacks in the Flatiron CLI library
+      console.error(error);
+    }
+  } else {
     done();
-  } catch (error) {
-    // TODO: workaround for async/await incompatibility with callbacks in the Flatiron CLI library
-    console.error(error);
   }
 };
 
